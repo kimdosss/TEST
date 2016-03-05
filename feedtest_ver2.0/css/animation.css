@@ -1,0 +1,54 @@
+.ng-enter,
+.ng-leave,
+.ng-move,
+.ng-show{
+	-webkit-transition: 0.8s linear all;
+	-moz-transition: 0.8s linear all;
+	-o-transition: 0.8s linear all;
+	transition: 0.8s linear all;
+}
+
+.ng-hide{
+	-webkit-transition: 0.3s linear all;
+	-moz-transition: 0.3s linear all;
+	-o-transition: 0.3s linear all;
+	transition: 0.3s linear all;
+}
+
+.ng-enter,
+.ng-move {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.ng-move.ng-move-active,
+.ng-enter.ng-enter-active {
+  opacity: 1;
+  height: 1em;
+}
+
+.ng-leave {
+  opacity: 1;
+  height: 1em;
+  overflow: hidden;
+}
+
+.ng-leave.ng-leave-active {
+  opacity: 0;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
+.RSS_area.ng-show{
+	width: 300px;
+}
+
+
+
+.RSS_area.ng-hide{
+	width: 0;
+	opacity: 0;
+}
